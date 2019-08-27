@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Foody</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="repass">Nhập lại mật khẩu</string>
+    <string name="dangtai">Đang tải...</string>
+</resources>

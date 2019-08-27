@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TrangChuActivity"
+    android:orientation="vertical"
+    android:background="#ccc">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:hint="Tìm kiếm..."
+                android:layout_weight="4"
+                android:textSize="14sp"
+                android:paddingLeft="3dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_find_replace_black_24dp"
+                android:background="@drawable/button_background_find" />
+
+            <Button
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:id="@+id/btnKhuVuc"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Khu vực"
+                android:drawablePadding="2dp"
+                android:paddingRight="3dp"
+                android:drawableRight="@drawable/ic_arrow_down_black_24dp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textColor="@drawable/change_text_tab_trangchu"
+                android:background="@drawable/button_background_khuvuc" />
+
+        </LinearLayout>
+
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/radioGr"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/custom_radio_button_group">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rbtnODau"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Ở đâu"-->
+        <!--android:button="@android:color/transparent"-->
+        <!--android:background="@drawable/custom_radio_button_o_dau"-->
+        <!--android:padding="10dp"-->
+        <!--android:checked="true"-->
+        <!--android:textColor="@drawable/change_text_radio_trang_chu"/>-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rbtnAnGi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Ăn gì"-->
+        <!--android:button="@android:color/transparent"-->
+        <!--android:background="@drawable/custom_radio_button_an_gi"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="@drawable/change_text_radio_trang_chu"/>-->
+
+        <!--</RadioGroup>-->
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/radioGrTab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorAccent">
+
+        <RadioButton
+            android:id="@+id/rbtnMoiNhat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mới nhất"
+            android:button="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="@drawable/change_text_tab_trangchu"
+            android:background="@drawable/change_background_tab"
+            android:checked="true" />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@color/colorBackgroundMain" />
+
+        <RadioButton
+            android:id="@+id/rbtnGanToi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Gần tôi"
+            android:button="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="@drawable/change_text_tab_trangchu"
+            android:background="@drawable/change_background_tab" />
+
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

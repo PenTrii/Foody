@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardviewContainer"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtDiemTrungBinhQuanAn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="6.8"
+                    android:background="@drawable/background_cycle"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTenODau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leo coffee"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:maxLines="1"
+                    android:id="@+id/txtDiaChiQuanAn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Ho xuan huong, q. Ngu hanh son, tp. DN" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtKhoangCach"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="6.6km" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgQuanAn"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/test"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnDatMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_radius_5dp"
+            android:padding="5dp"
+            android:text="Đặt món"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:id="@+id/containerBinhLuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImgUser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:src="@drawable/test"
+                android:text="6.8"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTieuDeBinhLuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leo Coffee 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNoiDungBinhLuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="144 Hồ Xuân Hương ĐN" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtChamDiemBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="6.6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerBinhLuan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImgUser2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:src="@drawable/test"
+                android:text="6.8"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTieuDeBinhLuan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leo Coffee 2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNoiDungBinhLuan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="144 Hồ Xuân Hương ĐN" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtChamDiemBinhLuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="7.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp">
+
+            <TextView
+                android:id="@+id/txtTongBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_comment_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txtTongHinhBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
